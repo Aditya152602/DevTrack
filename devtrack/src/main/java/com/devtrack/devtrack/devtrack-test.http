@@ -1,0 +1,153 @@
+
+### Create a new task
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Complete DevTrack API testing",
+  "completed": false
+}
+
+
+### Get a task by ID
+GET http://localhost:8080/api/tasks/10
+
+
+### Update an existing task
+PUT http://localhost:8080/api/tasks/10
+Content-Type: application/json
+
+{
+  "title": "DevTrack API testing completed",
+  "completed": true
+}
+
+
+### Delete a task
+DELETE http://localhost:8080/api/tasks/10
+
+
+### Validation test: empty task title
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "",
+  "completed": false
+}
+
+
+### Validation test: title too short
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "AB",
+  "completed": false
+}
+
+
+### Error handling test: nonexistent task
+GET http://localhost:8080/api/tasks/999999
+
+
+
+### Create a new task
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+{
+  "title": "Complete DevTrack API testing",
+  "completed": false
+}
+
+### Get a task by ID
+GET http://localhost:8080/api/tasks/12
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+
+### Update an existing task
+PUT http://localhost:8080/api/tasks/12
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+{
+  "title": "DevTrack API testing completed",
+  "completed": true
+}
+
+### Delete a task
+DELETE http://localhost:8080/api/tasks/12
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+### Validation test: empty task title
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+{
+  "title": "",
+  "completed": false
+}
+
+### Validation test: title too short
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+{
+  "title": "AB",
+  "completed": false
+}
+
+### Error handling test: nonexistent task
+GET http://localhost:8080/api/tasks/999999
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+### Login as Member
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "test_user_2",
+  "password": "TestUser@456"
+}
+
+### Member tries to update leader's task
+PUT http://localhost:8080/api/tasks/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+Content-Type: application/json
+
+{
+  "title": "Unauthorized update test",
+  "completed": true
+}
+#### Member tries to delete leader's task
+GET http://localhost:8080/api/tasks/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+
+###
+GET http://localhost:8080/api/tasks/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZGl0eWFfdGVzdCIsImlhdCI6MTc5MjkzNDUyNiwiZXhwIjoxNzkyOTM4MTI2fQ.7jOjk_5CEwbHO1yXcAEw9R3B6eT7SsQyhKqOJtbHchj1XcRoQpJawaxMvOKimlskqw9dZPJOVF8-KBjUMkRhTg
+
+###
+GET http://localhost:8080/api/tasks/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+###
+GET http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+
+###
+GET http://localhost:8080/api/tasks/11
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+
+###
+PUT http://localhost:8080/api/tasks/11
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0X3VzZXJfMiIsImlhdCI6MTc5MjkzNTU1OSwiZXhwIjoxNzkyOTM5MTU5fQ.SLf8hGDT4TiLL3LLk5kywBVQMQ8sqrBeHOBivdWbW16ULl1z0Mx-ltEvqxChDSYzd7XCpiTK1yJt0xPSVXmaXA
+Content-Type: application/json
+
+{
+  "title": "Member update permission test",
+  "completed": true
+}

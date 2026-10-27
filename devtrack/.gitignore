@@ -1,0 +1,23 @@
+
+# Java and Maven
+target/
+*.class
+*.jar
+*.war
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Logs
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java and Maven
+**/target/
+*.class
+*.jar
+*.war
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs and operating system files
+*.log
+.DS_Store
+Thumbs.db
