@@ -1,352 +1,471 @@
-# 🚀 DevTrack — Engineering Teams, In Perfect Sync.
+<div align="center">
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,45:0F172A,100:0369A1&text=DEVTRACK&fontColor=FFFFFF&fontSize=72&fontAlignY=38&desc=Plan%20Smarter.%20Build%20Together.%20Ship%20Better.&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="DevTrack futuristic banner"/>
-</p>
+<img src="assets/hero-3d.svg" alt="DevTrack — Secure Developer Project & Task Management Platform" width="100%"/>
 
-<p align="center">
-  <strong>A backend engineering project for collaborative task management, secure authentication, and team progress tracking.</strong>
-</p>
+<a href="https://github.com/Aditya152602/DevTrack">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=820&lines=Register+%E2%86%92+Login+%E2%86%92+Get+a+signed+JWT;Create+projects.+Track+tasks.+Own+your+data.;Controller+%E2%86%92+Service+%E2%86%92+Repository+%E2%86%92+MySQL;Dockerized.+Tested.+Deployed+on+AWS." alt="Typing animation" />
+</a>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=650&lines=Built+with+Java+%2B+Spring+Boot;RESTful+APIs+%7C+JWT+Authentication;MySQL+%7C+JPA+%7C+Automated+Tests;From+Local+Development+to+Docker" alt="Animated DevTrack technology tagline"/>
-</p>
+<br/>
 
-<p align="center">
-  <a href="https://github.com/Aditya152602/DevTrack"><img src="https://img.shields.io/badge/PROJECT-DevTrack-0EA5E9?style=for-the-badge&logo=github&logoColor=white" alt="DevTrack project"/></a>
-  <img src="https://img.shields.io/badge/JAVA-Backend-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java backend"/>
-  <img src="https://img.shields.io/badge/SPRING_BOOT-Framework-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot"/>
-  <img src="https://img.shields.io/badge/MYSQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-</p>
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-JWT-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-EC2_·_RDS_·_ECR-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Deployed_on_AWS-success?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Swagger](https://img.shields.io/badge/OpenAPI-Swagger_UI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![CI](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/API-REST-38BDF8?style=flat-square" alt="REST API"/>
-  <img src="https://img.shields.io/badge/Auth-JWT-8B5CF6?style=flat-square" alt="JWT authentication"/>
-  <img src="https://img.shields.io/badge/Data-Spring_Data_JPA-6DB33F?style=flat-square" alt="Spring Data JPA"/>
-  <img src="https://img.shields.io/badge/Testing-JUnit%20%26%20Spring-25A162?style=flat-square" alt="Testing"/>
-  <img src="https://img.shields.io/badge/Containers-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-</p>
+<h3>
+  <a href="#-live-demo">🌐 Live Demo</a> &nbsp;•&nbsp;
+  <a href="#-3d-architecture--exploded-view">🧊 3D Architecture</a> &nbsp;•&nbsp;
+  <a href="#-api-reference">📡 API</a> &nbsp;•&nbsp;
+  <a href="#-quick-start">⚡ Quick Start</a> &nbsp;•&nbsp;
+  <a href="#-the-8-week-build-journey">🗺️ Build Journey</a>
+</h3>
+
+</div>
 
 ---
 
-## ✨ The vision
+## 🎯 What is DevTrack?
 
-**Great teams don't just complete tasks. They create momentum.**
+> **DevTrack** is a production-style backend for managing developer **projects** and **tasks** — with real authentication, real authorization, a real database, containers, and a cloud deployment.
 
-DevTrack is a team-oriented task management backend designed to bring task assignment, progress visibility, and authenticated API access into one structured system.
+Most "task manager" demos stop at CRUD. DevTrack goes further and answers the questions a hiring manager actually asks:
 
-Instead of treating tasks as disconnected records, DevTrack is being developed around a more useful question:
-
-> How can a team understand what needs to be done, who is responsible, and how the overall work is progressing?
-
-The goal is to build a practical, maintainable backend using the technologies and engineering practices used in modern Java applications.
-
-## 🌌 Explore the system
-
-| Capability | What it brings |
+| ❓ Question | ✅ DevTrack's answer |
 |---|---|
-| 🔐 Authentication | Registration and login components with JWT-based authentication |
-| 📋 Task management | REST endpoints for creating, retrieving, updating, and deleting tasks |
-| 👥 Team workflows | Task assignment components and team-progress response models |
-| 🗄️ Persistent storage | MySQL integration through Spring Data JPA and Hibernate |
-| 🧪 Automated tests | Unit and integration test classes for backend behavior |
-| 🐳 Containerization | Dockerfile and Docker Compose configuration for a container-based setup |
+| *Can you secure an API?* | JWT auth, BCrypt hashing, role checks, **per-user resource ownership** |
+| *Can you design data?* | Normalized MySQL schema, JPA relationships, FK-enforced integrity |
+| *Can you keep it reliable?* | DTOs, validation, global error handling, JUnit 5 + Mockito + integration tests |
+| *Can you ship it?* | Dockerfile + Compose, deployed to AWS (EC2 + RDS), logs in CloudWatch |
+| *Can you document it?* | Swagger/OpenAPI, architecture diagrams, CI pipeline |
 
-*Features listed here reflect the current project structure. Individual workflows and deployment configurations should be verified as development progresses.*
+> 🔐 **Security promise:** one user can **never** read or change another user's private projects by simply editing an ID in the URL.
 
 ---
 
-## 🧊 Architecture — a closer look
+## 🌐 Live Demo
 
-DevTrack follows a layered backend design. Each layer has a responsibility, making the code easier to understand, test, and extend.
+| Resource | Link |
+|---|---|
+| ☁️ Hosting | **Deployed on AWS** — EC2 · RDS · ECR · CloudWatch — ✅ Live |
+| 🚀 Live API | `https://<your-aws-endpoint>` *(paste your public EC2 / load-balancer URL)* |
+| 📖 Swagger UI | `https://<your-aws-endpoint>/swagger-ui/index.html` |
+| 🎥 Demo video | `<add link>` |
+
+---
+
+## 🧊 3D Architecture — Exploded View
+
+Every request travels **down** this stack and the response travels back **up**.
+
+<div align="center">
+  <img src="assets/architecture-3d.svg" alt="DevTrack 3D isometric exploded architecture" width="92%"/>
+</div>
+
+<br/>
+
+<details>
+<summary><b>🔬 Follow one request: <code>POST /api/projects/{id}/tasks</code></b> (click to expand)</summary>
 
 ```mermaid
-flowchart TB
-    C(["🌐 API Client"])
-    S["🔐 Spring Security<br/>JWT Authentication"]
-    CT["🎮 REST Controllers"]
-    SV["⚙️ Service Layer"]
-    RP["📚 Spring Data JPA<br/>Repositories"]
-    DB[("🗄️ MySQL Database")]
+sequenceDiagram
+    autonumber
+    actor C as Client (Postman / Swagger)
+    participant F as JWT Filter
+    participant K as TaskController
+    participant S as TaskService
+    participant R as TaskRepository
+    participant D as MySQL
 
-    C --> S
-    S --> CT
-    CT --> SV
-    SV --> RP
-    RP --> DB
-
-    style C fill:#0f172a,stroke:#38bdf8,color:#ffffff
-    style S fill:#172554,stroke:#818cf8,color:#ffffff
-    style CT fill:#082f49,stroke:#38bdf8,color:#ffffff
-    style SV fill:#052e16,stroke:#4ade80,color:#ffffff
-    style RP fill:#3b0764,stroke:#c084fc,color:#ffffff
-    style DB fill:#1e293b,stroke:#fbbf24,color:#ffffff
+    C->>F: POST /api/projects/7/tasks + Bearer token
+    F->>F: Validate signature & expiry
+    alt token missing / invalid
+        F-->>C: 401 Unauthorized
+    end
+    F->>K: Authenticated user in SecurityContext
+    K->>K: @Valid CreateTaskRequest (DTO)
+    K->>S: createTask(projectId, dto, currentUser)
+    S->>S: Is currentUser allowed on project 7?
+    alt not allowed
+        S-->>C: 403 Forbidden
+    end
+    S->>R: save(task)
+    R->>D: INSERT INTO tasks ...
+    D-->>R: row + generated id
+    R-->>S: Task entity
+    S-->>K: TaskResponse DTO
+    K-->>C: 201 Created + JSON
 ```
 
-### How a request travels
-
-1. **Client** — sends an HTTP request to the API.
-2. **Security** — protects secured routes using the configured authentication mechanism.
-3. **Controller** — receives the request and coordinates the relevant operation.
-4. **Service** — contains application and business logic.
-5. **Repository** — communicates with persistent storage through Spring Data JPA.
-6. **Database** — stores application records in MySQL.
-
-The diagram represents the intended request flow; public routes, exception handling, and individual controller mappings can vary by endpoint.
+</details>
 
 ---
 
-## 🛠️ Technology stack
+## ✨ Features
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,mysql,maven,docker,git,github,idea&perline=8" alt="Java, Spring, MySQL, Maven, Docker, Git, GitHub, IntelliJ IDEA technology icons"/>
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-| Technology | Purpose |
+### 🔐 Auth & Security
+- Registration & login
+- Passwords hashed with **BCrypt** (never plaintext)
+- Signed **JWT** with expiry
+- Role-based access checks
+- **Resource ownership** enforcement
+- Secrets via environment variables (never committed)
+
+</td>
+<td width="50%" valign="top">
+
+### 📦 Projects & Tasks
+- Create / list / view projects
+- Add, list, update (`PATCH`), delete tasks
+- Task **status**, **priority**, **due date**, **assignee**
+- Pagination, sorting & filtering  
+  `GET /api/tasks?status=TODO&page=0&size=10`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ Robust API
+- **DTOs** control exactly what goes in/out
+- Bean Validation: `@Valid`, `@NotBlank`, `@Email`, `@Size`
+- `@RestControllerAdvice` → one consistent error format
+- Meaningful HTTP codes: `201` `400` `401` `403`
+
+</td>
+<td width="50%" valign="top">
+
+### 🚢 Ship-ready
+- Multi-stage-friendly **Dockerfile**
+- **Docker Compose**: app + MySQL in one command
+- AWS: **ECR → EC2**, managed **RDS MySQL**
+- **CloudWatch** logs & basic monitoring
+- **GitHub Actions** CI
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧰 Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,hibernate,docker,aws,git,github,githubactions,postman,idea&perline=11" alt="Tech stack icons"/>
+
+</div>
+
+| Layer | Technology |
 |---|---|
-| Java | Application programming language |
-| Spring Boot | Backend application framework |
-| Spring Web | REST API development |
-| Spring Security | Authentication and request security |
-| JWT | Token-based authentication |
-| Spring Data JPA | Database access and repository abstraction |
-| Hibernate | Object-relational mapping |
-| MySQL | Relational data storage |
-| Maven | Dependency and build management |
-| JUnit / Spring test tools | Automated testing |
-| Docker / Compose | Container packaging and service configuration |
-| Git and GitHub | Version control and source hosting |
+| Language | Java |
+| Framework | Spring Boot, Spring Web, Spring Data JPA |
+| Security | Spring Security, JWT, BCrypt |
+| Database | MySQL (local) → AWS RDS (production) |
+| Testing | JUnit 5, Mockito, integration tests |
+| Docs | Swagger / OpenAPI |
+| DevOps | Docker, Docker Compose, GitHub Actions |
+| Cloud | AWS ECR, EC2, RDS, CloudWatch |
+| Tools | IntelliJ IDEA, Postman, Git |
 
 ---
 
-## 🔌 API overview
+## 📡 API Reference
 
-DevTrack includes REST endpoints for task CRUD operations and authentication components.
+> Base path: `/api` &nbsp;|&nbsp; 🔓 = public &nbsp;|&nbsp; 🔒 = requires `Authorization: Bearer <JWT>`
 
-### Task endpoints
+| | Feature | Method & Endpoint | Purpose |
+|:-:|---|---|---|
+| 🔓 | Register | `POST /api/auth/register` | Create a user account |
+| 🔓 | Login | `POST /api/auth/login` | Authenticate, receive JWT |
+| 🔒 | Current user | `GET /api/users/me` | Logged-in user's profile |
+| 🔒 | Create project | `POST /api/projects` | Create a project |
+| 🔒 | List projects | `GET /api/projects` | Projects the user can access |
+| 🔒 | Project details | `GET /api/projects/{id}` | One authorized project |
+| 🔒 | Create task | `POST /api/projects/{id}/tasks` | Add a task to a project |
+| 🔒 | List tasks | `GET /api/projects/{id}/tasks` | Tasks of a project |
+| 🔒 | Update task | `PATCH /api/tasks/{id}` | Change status, priority, details |
+| 🔒 | Delete task | `DELETE /api/tasks/{id}` | Delete an authorized task |
 
-The task collection uses `/api/tasks`.
+### 🚦 Status codes
 
-| Method | Endpoint | Purpose |
-|---|---|---|
-| `GET` | `/api/tasks` | Retrieve tasks |
-| `POST` | `/api/tasks` | Create a task |
-| `PUT` | `/api/tasks/{id}` | Update an existing task |
-| `DELETE` | `/api/tasks/{id}` | Delete a task |
+| Code | Meaning | When |
+|:-:|---|---|
+| `201` | Created | Resource created successfully |
+| `400` | Bad Request | Validation failed / malformed input |
+| `401` | Unauthorized | Missing, expired or invalid token |
+| `403` | Forbidden | Authenticated, but not allowed |
 
-Secured endpoints may require a valid bearer token, depending on the configured security rules.
+<details>
+<summary><b>🧪 Try it with curl</b></summary>
 
-### Example request
+```bash
+# 1. Register
+curl -X POST http://localhost:8080/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Aditya","email":"aditya@example.com","password":"StrongPass#123"}'
 
-Create a task using a client such as Postman:
+# 2. Login -> copy the token from the response
+curl -X POST http://localhost:8080/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"aditya@example.com","password":"StrongPass#123"}'
 
-```http
-POST /api/tasks
-Content-Type: application/json
-Authorization: Bearer <your-jwt-token>
+# 3. Call a protected endpoint
+curl http://localhost:8080/api/users/me \
+  -H "Authorization: Bearer <PASTE_TOKEN_HERE>"
 ```
 
-Example JSON structure:
+> Adjust field names to match your actual DTOs.
 
-```json
-{
-  "title": "Build the task management API",
-  "description": "Implement and test the task workflow"
-}
-```
-
-Use the actual fields defined by the current request model when sending requests. The example illustrates the workflow, not a guarantee that every field is required or accepted.
-
-### Authentication
-
-The project includes registration and login request/response models, an authentication controller, a JWT service, and a JWT authentication filter.
-
-Consult `AuthController.java` and `SecurityConfig.java` for the exact authentication URLs, public routes, token rules, and required request fields.
+</details>
 
 ---
 
-## ⚡ Getting started
+## 🗄️ Database Design
+
+```mermaid
+erDiagram
+    USERS ||--o{ PROJECTS : owns
+    PROJECTS ||--o{ TASKS : contains
+    USERS ||--o{ TASKS : "assigned to"
+
+    USERS {
+        bigint id PK
+        string name
+        string email
+        string password_hash
+        string role
+    }
+    PROJECTS {
+        bigint id PK
+        string name
+        string description
+        bigint owner_id FK
+        datetime created_at
+    }
+    TASKS {
+        bigint id PK
+        string title
+        string description
+        string status
+        string priority
+        date due_date
+        bigint project_id FK
+        bigint assignee_id FK
+    }
+```
+
+- 👤 One **user** owns many **projects**
+- 📁 One **project** contains many **tasks**
+- 🎯 One **user** can be assigned many **tasks**
+- JPA: `@ManyToOne` / `@OneToMany` — cascading is applied **deliberately**, not blindly
+
+---
+
+## 🔒 Security Model
+
+```mermaid
+flowchart LR
+    A([Request]) --> B{Bearer token<br/>present & valid?}
+    B -- No --> X1[/401 Unauthorized/]
+    B -- Yes --> C{Role allowed<br/>for endpoint?}
+    C -- No --> X2[/403 Forbidden/]
+    C -- Yes --> D{Owns or has access<br/>to this resource?}
+    D -- No --> X2
+    D -- Yes --> E([Business logic runs ✅])
+    style X1 fill:#7f1d1d,color:#fff
+    style X2 fill:#7c2d12,color:#fff
+    style E fill:#14532d,color:#fff
+```
+
+- ✅ Passwords stored only as **BCrypt hashes**
+- ✅ JWTs are **signed** and **expire**
+- ✅ Ownership checked in the **service layer**, not just at the URL
+- ✅ **No secrets in Git** — use environment variables
+
+---
+
+## ⚡ Quick Start
 
 ### Prerequisites
+`Java 17+` · `Maven` · `Docker & Docker Compose` · `Git`
 
-Install the following before running the application locally:
-
-- Java Development Kit compatible with the project configuration
-- Maven, or use the included Maven Wrapper if one is added
-- MySQL Server
-- Git
-
-### 1. Clone the repository
+### Option A — 🐳 Docker Compose (recommended)
 
 ```bash
 git clone https://github.com/Aditya152602/DevTrack.git
 cd DevTrack
-```
 
-### 2. Create the database
-
-Open your MySQL client and execute:
-
-```sql
-CREATE DATABASE IF NOT EXISTS devtrack_db;
-```
-
-Configure a dedicated database user with only the privileges the application needs. Avoid using the MySQL root account for routine application access.
-
-### 3. Configure environment variables
-
-The repository includes `.env.example` as a template. Create the actual environment configuration locally, or configure the variables in your IDE's run configuration.
-
-Required values:
-
-```dotenv
-DB_USERNAME=your_database_username
-DB_PASSWORD=your_database_password
-JWT_SECRET=your_long_random_secret
-```
-
-For Docker Compose, also configure:
-
-```dotenv
-MYSQL_ROOT_PASSWORD=your_separate_root_password
-```
-
-Use unique secrets, keep `.env` out of Git, and never publish real passwords or JWT signing keys.
-
-### 4. Run the Spring Boot application
-
-The Maven project is located in the `devtrack/` directory:
-
-```bash
-cd devtrack
-mvn spring-boot:run
-```
-
-If Maven is not installed, install it or add a Maven Wrapper to the project.
-
-When startup succeeds, the application should listen on its configured port, typically `8080`.
-
-### 5. Test the API
-
-Use Postman or another HTTP client to test the task endpoints. Start with authentication if a route requires a token.
-
-Check the application console for database connection errors, missing environment variables, and startup failures.
-
----
-
-## 🐳 Docker deployment path
-
-The repository contains a `Dockerfile`, `compose.yaml`, and `.dockerignore` to support a container-based setup.
-
-From the repository root, the intended command is:
-
-```bash
+cp .env.example .env        # then edit values
 docker compose up --build
 ```
 
-The Compose configuration is designed to run the backend alongside MySQL and use a persistent database volume.
+API → `http://localhost:8080` &nbsp;|&nbsp; Swagger → `http://localhost:8080/swagger-ui/index.html`
 
-**Before running this command:** verify that the Dockerfile copies the Maven project from `devtrack/`, because the `pom.xml` and `src/` directory are nested there rather than at the repository root. Also verify the environment variables and health-check configuration.
-
-To stop the services:
+### Option B — 💻 Run locally
 
 ```bash
-docker compose down
+# start a local MySQL (or use your own), then:
+export DB_URL=jdbc:mysql://localhost:3306/devtrack
+export DB_USERNAME=devtrack
+export DB_PASSWORD=change_me
+export JWT_SECRET=<long-random-secret>
+export JWT_EXPIRATION_MS=3600000
+
+./mvnw spring-boot:run
 ```
 
-To stop the services without deleting the persistent database volume, use the command above. Do not add `-v` unless you intentionally want to remove that volume and its stored data.
+### 🔑 Environment variables
+
+| Variable | Description |
+|---|---|
+| `DB_URL` | JDBC URL of MySQL |
+| `DB_USERNAME` / `DB_PASSWORD` | Database credentials |
+| `JWT_SECRET` | Signing key — **never commit this** |
+| `JWT_EXPIRATION_MS` | Token lifetime |
+
+> Match these names to your `application.properties` / `docker-compose.yml`.
 
 ---
 
-## 🧪 Testing and quality
-
-The repository includes tests for application context loading, task service behavior, and task controller integration.
-
-Run the test suite from the Maven project directory:
+## 🧪 Testing
 
 ```bash
-cd devtrack
-mvn test
+./mvnw test
 ```
 
-Use test results to validate changes before committing them. Integration tests that rely on MySQL or authentication should be configured with the correct test environment and credentials.
+| Area | Verified |
+|---|---|
+| Authentication | Register, login, invalid credentials |
+| Task creation | Happy path & persistence |
+| Validation | Bad input → `400` with consistent error body |
+| Access control | No token → `401`; other user's resource → `403` |
+
+> 🧬 **Sanity rule:** break an important rule on purpose → tests **fail**; fix it → tests **pass**.
+
+**Latest results:** `<paste test count / pass rate>` &nbsp;|&nbsp; **Perf baseline:** `<paste simple load-test numbers>`
 
 ---
 
-## 🗺️ Development roadmap
+## ☁️ Deployment (AWS)
 
-DevTrack is an evolving engineering project. The next milestones focus on correctness, security, maintainability, and deployment.
+```mermaid
+flowchart LR
+    DEV[👨‍💻 Developer] -->|docker build & push| ECR[(Amazon ECR)]
+    ECR -->|pull image| EC2[🖥️ EC2<br/>DevTrack container]
+    USER[🌍 Client] -->|HTTPS| EC2
+    EC2 -->|private network| RDS[(🗄️ RDS MySQL<br/>private)]
+    EC2 -.->|logs| CW[📊 CloudWatch]
+```
 
-- [x] Task CRUD API foundation
-- [x] Service and repository layers
-- [x] Initial MySQL/JPA integration
-- [x] JWT authentication components
-- [x] Initial automated tests
-- [x] Initial GitHub repository and commit
-- [ ] Verify registration, login, token expiry, and protected routes end to end
-- [ ] Enforce task ownership and team authorization consistently
-- [ ] Strengthen validation and integration-test coverage
-- [ ] Verify the complete Docker Compose workflow
-- [ ] Add API documentation and example requests
-- [ ] Deploy to a cloud environment
-- [ ] Add CI checks for builds and tests
-
-*The checklist records the intended development journey; checked items indicate the initial implementation work, not a claim of production readiness.*
+- 🔐 RDS kept **private** — database port is never public
+- 🧱 Security groups restrict network access
+- 🗝️ Secrets stored securely, not in the repo
+- 💸 Billing alerts set **before** provisioning
 
 ---
 
-## 🔒 Security principles
+## 📁 Project Structure
 
-Security is more than adding a login endpoint.
+```text
+devtrack/
+├── src/main/java/.../devtrack/
+│   ├── controller/     # HTTP layer (REST endpoints)
+│   ├── service/        # Business rules & ownership checks
+│   ├── repository/     # Spring Data JPA repositories
+│   ├── entity/         # User, Project, Task
+│   ├── dto/            # Request / response models
+│   ├── security/       # JWT filter, config, BCrypt
+│   └── exception/      # @RestControllerAdvice handlers
+├── src/test/           # Unit + integration tests
+├── Dockerfile
+├── docker-compose.yml
+├── .env.example
+└── .github/workflows/  # CI pipeline
+```
 
-- Store passwords using a strong password-hashing algorithm such as BCrypt.
-- Keep JWT signing secrets outside source control.
-- Validate input and return appropriate HTTP status codes.
-- Enforce authorization on the server, not just in the user interface.
-- Ensure users can access only the tasks and team data they're permitted to access.
-- Use HTTPS in deployed environments.
-- Avoid logging passwords, tokens, or other sensitive values.
-- Rotate any credential that has been exposed.
+> Adjust folder names to match your real package layout.
 
-JWT authentication alone does **not** provide end-to-end encryption. Any claim of end-to-end encryption would require a separately designed and verified encryption protocol.
+---
+
+## 🗺️ The 8-Week Build Journey
+
+> Built milestone by milestone — fundamentals first, features second.
+
+| Week | Milestone | Deliverable | Status |
+|:-:|---|---|:-:|
+| 1 | ☕ Java & backend foundations | Console task manager | ✅ |
+| 2 | 🌱 Spring Boot & first REST APIs | API tested in Postman | ✅ |
+| 3 | 🗄️ MySQL, JPA & Hibernate | Data survives restarts | ✅ |
+| 4 | 🔐 JWT auth & authorization | Protected endpoints, ownership rules | ✅ |
+| 5 | 🛡️ Robust API & tests | DTOs, validation, pagination, JUnit/Mockito | ✅ |
+| 6 | 🐳 Docker & reproducible setup | One-command local stack | ✅ |
+| 7 | ☁️ AWS deployment | Live, remotely callable API | ✅ |
+| 8 | ✨ Portfolio polish | Swagger, CI, docs, diagrams | ✅ |
+
+> Update the Status column to match your real progress.
+
+<details>
+<summary><b>📖 Week-by-week details</b></summary>
+
+**Week 1 — Java & backend foundations.** Classes/objects, OOP, collections, exceptions, basic SQL, Git.  
+**Week 2 — Spring Boot REST.** `@RestController`, mappings, `@PathVariable`/`@RequestBody`, Controller → Service → Repository.  
+**Week 3 — Persistence.** `@Entity`, `JpaRepository`, `@ManyToOne`/`@OneToMany`, MySQL config via env vars.  
+**Week 4 — Security.** Filter chain, BCrypt, JWT signing/expiry, roles, ownership checks.  
+**Week 5 — Quality.** DTOs, `@Valid`, global error handling, pagination/sorting/filtering, JUnit 5 + Mockito.  
+**Week 6 — Containers.** Dockerfile, Compose, env config, logs/ports/networking.  
+**Week 7 — Cloud.** ECR, EC2, RDS, security groups, CloudWatch, billing alerts.  
+**Week 8 — Polish.** OpenAPI, architecture diagrams, CI, test evidence, design notes.
+
+</details>
+
+---
+
+## 🧠 Design Decisions & Known Limitations
+
+**Decisions**
+- 🧱 **Monolith first** — a clean layered monolith beats premature microservices.
+- 📨 **DTOs everywhere** — entities never leak straight to clients.
+- 🧩 **Ownership in the service layer** — URL-level rules alone can't stop ID tampering.
+- 🔁 **Deliberate cascading** — avoids accidental mass deletes.
+
+**Known limitations / next steps**
+- [ ] Team membership & shared projects
+- [ ] Task comments
+- [ ] Refresh tokens
+- [ ] Rate limiting
+- [ ] Caching hot reads
 
 ---
 
 ## 🤝 Contributing
 
-Suggestions, issues, and constructive feedback are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make a focused change.
-4. Run the relevant tests.
-5. Open a pull request describing the change and its verification.
-
-For bugs, include reproducible steps and sanitized logs. Never include real credentials, access tokens, or personal data.
+1. Fork the repo
+2. `git checkout -b feature/amazing-idea`
+3. Commit with clear messages
+4. Open a Pull Request
 
 ---
 
-## 👨‍💻 About the developer
+<div align="center">
 
-**Aditya Dhar Dwivedi**  
-Computer Science Engineering · Artificial Intelligence, Algorithms & Machine Learning
+### 👨‍💻 Built by **Aditya Dhar Dwivedi**
 
-Interested in backend engineering, algorithmic problem solving, scalable software, and AI-powered applications.
+[![GitHub](https://img.shields.io/badge/GitHub-Aditya152602-181717?style=for-the-badge&logo=github)](https://github.com/Aditya152602)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-dwivedi26-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dwivedi26)
+[![Portfolio](https://img.shields.io/badge/Portfolio-aditya152602.github.io-22D3EE?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aditya152602.github.io/Portfolio)
 
-<p align="center">
-  <a href="https://github.com/Aditya152602"><img src="https://img.shields.io/badge/GitHub-Aditya152602-181717?style=for-the-badge&logo=github" alt="GitHub profile"/></a>
-  <a href="https://linkedin.com/in/dwivedi26/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn profile"/></a>
-  <a href="https://aditya152602.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-Explore-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-</p>
+⭐ **If DevTrack impressed you, drop a star — it fuels the next build.** ⭐
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="footer wave"/>
 
-<p align="center">
-  <strong>Good software isn't just written. It's designed, tested, secured, and continuously improved.</strong>
-  <br/>
-  <sub>DevTrack · A journey toward better backend engineering.</sub>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0369A1,50:0F172A,100:020617" width="100%" alt="Decorative footer banner"/>
-</p>
+</div>
